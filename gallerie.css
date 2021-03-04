@@ -93,10 +93,17 @@ text-align: center;
 }
 .Form-section{
     width: 40%;
+   
 }
+
 
 .filter{
     padding: 25px;
+    
+}
+.filter form{
+  display: flex;
+  justify-content: center;
 }
 .select1{
     margin: 35px;
@@ -106,6 +113,7 @@ label{
     font-size: 20px;
     margin:15px ;
     color: #012738;
+   
 }
 select{
     width: 100px;
@@ -120,7 +128,133 @@ select{
 .Form-section form{
     border: 2px solid #012738;
     border-radius: 20px;
+   
 }
 .price{
     display: flex;
+}
+.select2{
+margin-top: 20px; 
+margin-bottom: 20px;    
+}
+.select2 select{
+  width: 390px;
+}
+.Bedroom{
+  display: flex;
+}
+.f2{
+height:300px ;
+border: 2px solid #012738;
+border-radius: 20px;
+}
+.bath{
+  margin-top: 20px; 
+margin-bottom: 20px;   
+}
+.bt{
+  background-color: transparent;
+  border: 2px solid #012738;
+  border-radius: 20px;
+  width: 200px;
+  height: 30px;
+margin-left: 180px;
+margin-top: 20px;}
+#bath{
+  width: 380px;
+}
+#max-price{
+  width: 170px;
+}
+.section-footer {
+  display: flex;
+  background-color: #051922;
+  color: white;
+  padding: 70px 0;
+  justify-content: space-around;
+}
+.About-Us {
+  width: 25%;
+}
+.get-in-touch {
+  width: 25%;
+}
+.Pages {
+  width: 10%;
+}
+.Newletter {
+  width: 25%;
+}
+
+.section-footer h2 {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.section-footer h2:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fbc531;
+  content: "";
+}
+.section-footer p {
+  color: #fff;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+.Pages a {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  color: #fff;
+}
+.Newletter input {
+  border: none;
+  background-color: #012738;
+  width: 60%;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+}
+.Newletter button {
+  width: 20%;
+  border: none;
+  background-color: #012738;
+  color: #fbc531;
+  padding: 14px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.copyright {
+  background-color: #051922;
+  border-top: 1px solid #232a35;
+}
+.copyright p {
+  margin: 0;
+  color: #fff;
+  opacity: 0.7;
+  padding: 16px 0;
+  font-size: 15px;
+  text-align: center;
+}
+#input1{
+  width: 150px;
+  border: 2px solid #012738;
+  background-color: transparent;
+  border-radius: 20px;
+  height: 25px;
+}
+.fas{
+  margin-left: -20px;
 }

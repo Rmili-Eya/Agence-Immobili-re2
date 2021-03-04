@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery Page</title>
     <link rel="stylesheet" href="gallerie.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
     <!-----------------------------------NavBar ---------------------------------------------->
@@ -16,7 +18,7 @@
                 <li><a href="index.html">Home</i></a></li>
                 <li> <a href="#"> About Us  </a></li>
                 <li> <a href="galleries.html"> Gallery </a> </li>
-                <li> <a href="#"> Contact</a></li>
+                <li> <a href="contact.html"> Contact</a></li>
 
             </ul>
         </div>
@@ -40,6 +42,11 @@
       <option value="">Desc</option>
     </select>
 </div>
+<div class="select1">
+<input type="text" placeholder="Search.." id="input1" ><i class="fas fa-search"></i>
+
+
+</div>
 </form>
 </div>
 <div class="row">
@@ -50,9 +57,9 @@
     </div>
     <div class="card-stacked">
       <div class="card-content">
-        <h3>Title Goes Here</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed doeiusmod tempor incididunt.</p>
-       </div>
+        <h3>S+2 de 88m² avec 36m² de jardin</h3>
+        <p>Ref. VA2008 : Ce duplex rénové à neuf est situé au sein d'une résidence sécurisée avec piscine à Hammamet Centre, située à moins de dix minutes à pied de la plage. L'entrée ouvre sur l'espace jour,</p>
+      </div>
      </div>
      </div>
      <!------->
@@ -62,8 +69,8 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>Title Goes Here</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed doeiusmod tempor incididunt.</p>
+            <h3>Duplex rénové de 90m² avec 35m² de terrasse</h3>
+            <p>Ref. VA2008 : Ce duplex rénové à neuf est situé au sein d'une résidence sécurisée avec piscine à Hammamet Centre, située à moins de dix minutes à pied de la plage. L'entrée ouvre sur l'espace jour,</p>
            </div>
          </div>
          </div>
@@ -74,29 +81,18 @@
         </div>
         <div class="card-stacked">
           <div class="card-content">
-            <h3>Title Goes Here</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed doeiusmod tempor incididunt.</p>
+            <h3>S+2 de 100m² à hammamet Nord</h3>
+            <p>Ref. VA2008 : Ce duplex rénové à neuf est situé au sein d'une résidence sécurisée avec piscine à Hammamet Centre, située à moins de dix minutes à pied de la plage. L'entrée ouvre sur l'espace jour,</p>
            </div>
          </div>
      </div>
-          <!------->
-     <div class="card horizontal">
-        <div class="card-image">
-          <img src="c4.jpeg">
-        </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <h3>Title Goes Here</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,  sed doeiusmod tempor incididunt.</p>
-           </div>
-         </div>
-</div>
+
 </div>
 
 <!------------------------------------Form Section----------------------------------------------------->
 <div class="Form-section">
-<form>
-    <div class="select1">
+<form class="f2">
+    <div class="select2">
         <label for="choices">Category</label>
         <select name="choices" id="choices">
           <option value="">Appartment</option> 
@@ -106,24 +102,90 @@
     </div>
     <div class="price">
         <div class="min">
-            <label for="choices">Category</label>
-            <select name="choices" id="choices">
-              <option value="">Appartment</option> 
-              <option value="">Villa</option>
-              <option value="">Small Studio</option>
+            <label for="choices">Min Price</label>
+            <select name="choices" id="">
+              <option value="">Any</option> 
+              <option value="">100-200</option> 
+              <option value="">200-300</option>
+              <option value="">300-400</option>
             </select>
         </div>
         <div class="max">
-            <label for="choices">Category</label>
+            <label for="choices">Max Price</label>
+            <select name="choices" id="max-price">
+            <option value="">Any</option> 
+              <option value="">500-600</option> 
+              <option value="">600-700</option>
+              <option value="">700-800</option>
+            </select>
+        </div>
+    </div><br>
+    <div class="Bedroom">
+        <div class="min">
+            <label for="choices">Bedroom Min</label>
             <select name="choices" id="choices">
-              <option value="">Appartment</option> 
-              <option value="">Villa</option>
-              <option value="">Small Studio</option>
+              <option value="">Any</option> 
+              <option value="">100-200</option> 
+              <option value="">200-300</option>
+              <option value="">300-400</option>
+            </select>
+        </div>
+        <div class="max">
+            <label for="choices">Bedroom Max</label>
+            <select name="choices" id="choices">
+            <option value="">Any</option> 
+              <option value="">500-600</option> 
+              <option value="">600-700</option>
+              <option value="">700-800</option>
             </select>
         </div>
     </div>
+    <div class="bathroom">
+      <div class="bath">
+        <label for="choices">Bathroom</label>
+        <select name="choices" id="bath">
+        <option value="">Any</option> 
+          <option value="">500-600</option> 
+          <option value="">600-700</option>
+          <option value="">700-800</option>
+        </select>
+    </div>
+    </div>
+    <button type="submit" class="bt">Search</button>
 </form>
 </div>
 </div>
+    <!-------------------------------Section Footer------------------------------------>
+    <div class="section-footer">
+      <div class="About-Us">
+        <h2>About Us</h2>
+        <p>Ut enim ad minim veniam perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae.</p>
+      </div>
+      <div class="get-in-touch">
+          <h2>Get In Touch</h2>
+          <p>34/8, East Hukupara, Gifirtok, Sadan.</p>
+          <p>sweethome@gmail.com</p>
+          <p>+216 23654987</p>
+      </div>
+      <div class="Pages">
+       <h2>Pages</h2>
+       <a href="">Home</a>
+       <a href="">About Us</a>
+       <a href="">Gallery</a>
+       <a href="">Contact</a>
+      </div>
+      <div class="Newletter">
+     <h2>Subscribe</h2>
+     <p>Subscribe to our mailing list to get the latest updates.</p>
+     <input type="text">
+     <button type="submit"><i class="fas fa-paper-plane"></i></button>
+      </div>
+  </div>
+  <div class="copyright">
+   <p>Copyrights &copy; 2021 -Rmili Eya,  All Rights Reserved.</p>
+
+  </div>
+
+  </div> 
 </body>
 </html>
