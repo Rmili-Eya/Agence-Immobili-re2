@@ -3,6 +3,8 @@ Body {
   margin: 0;
   padding: 0;
   font-family: "IM Fell English", serif;
+  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./b2.jpeg);
+
 }
 #navbar {
   display: flex;
@@ -24,7 +26,6 @@ Body {
   text-transform: uppercase;
 }
 .background2{
-    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./b2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -32,26 +33,112 @@ Body {
     height: 40vh;
 }
 
-
-form {
+.section-footer {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-form input {
-  font-size: 15px;
-  width: 220px;
-  height: 23px;
-  border-radius: 12px;
-}
-textarea {
-  border-radius: 12px;
-  padding: 20px;
-  width: 180px;
-}
-.btnEnvoyer {
-  background-color: gray;
+  background-color: #051922;
   color: white;
-  width: 100px;
-  border-radius: 20px;
+  padding: 70px 0;
+  justify-content: space-around;
+}
+.About-Us {
+  width: 25%;
+}
+.get-in-touch {
+  width: 25%;
+}
+.Pages {
+  width: 10%;
+}
+.Newletter {
+  width: 25%;
+}
+
+.section-footer h2 {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.section-footer h2:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fbc531;
+  content: "";
+}
+.section-footer p {
+  color: #fff;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+.Pages a {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  color: #fff;
+}
+.Newletter input {
+  border: none;
+  background-color: #012738;
+  width: 60%;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+}
+.Newletter button {
+  width: 20%;
+  border: none;
+  background-color: #012738;
+  color: #fbc531;
+  padding: 14px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.copyright {
+  background-color: #051922;
+  border-top: 1px solid #232a35;
+}
+.copyright p {
+  margin: 0;
+  color: #fff;
+  opacity: 0.7;
+  padding: 16px 0;
+  font-size: 15px;
+  text-align: center;
+}
+
+.contact-section h1{
+  text-align: center;
+  color: #fff;
+}
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px #34495e;
+
 }
