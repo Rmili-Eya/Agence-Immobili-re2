@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
 Body {
   margin: 0;
   padding: 0;
-  font-family: 'IM Fell English', serif;
+  font-family: "IM Fell English", serif;
 }
 #navbar {
   display: flex;
@@ -24,13 +24,13 @@ Body {
   text-transform: uppercase;
 }
 .background-image {
-  background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(.//b2.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(.//b2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
   height: 100vh;
- 
 }
 .content {
   width: 100%;
@@ -40,12 +40,10 @@ Body {
   top: 50%;
   transform: translateY(-50%);
 }
-.content h1{
-  
-    font-size: 70px;
-    margin-top: 80px;
-    margin-bottom: 10px;
-  
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+  margin-bottom: 10px;
 }
 #bouton-Contact {
   width: 200px;
@@ -59,7 +57,7 @@ Body {
   color: #fff;
   cursor: pointer;
 }
-.formulaire{
+.formulaire {
   position: absolute;
   width: 700px;
   height: 150px;
@@ -67,144 +65,250 @@ Body {
   background: gray;
   top: 100%;
   left: 50%;
-  transform: translate(-50%,-50%);
-  
+  transform: translate(-50%, -50%);
 }
 .Labels {
-display: grid;
-grid-template-columns: 140px 140px 140px 140px;
-grid-column-gap: 10px;
-justify-content: center;
-}
-.inputs{
   display: grid;
   grid-template-columns: 140px 140px 140px 140px;
   grid-column-gap: 10px;
   justify-content: center;
- 
 }
-.inputs1{
+.inputs {
   display: grid;
-  grid-template-columns: 200px 200px 150px ;
+  grid-template-columns: 140px 140px 140px 140px;
+  grid-column-gap: 10px;
+  justify-content: center;
+}
+.inputs1 {
+  display: grid;
+  grid-template-columns: 200px 200px 150px;
   grid-column-gap: 20px;
   justify-content: center;
-  
-
 }
-.inputs1 input{
+.inputs1 input {
   height: 20px;
 }
-.row1{
+.row1 {
   display: grid;
-  grid-template-columns: 100px 100px ;
+  grid-template-columns: 100px 100px;
   grid-column-gap: 10px;
-
-
 }
-.row2{
+.row2 {
   display: grid;
-  grid-template-columns: 100px 100px ;
+  grid-template-columns: 100px 100px;
   grid-column-gap: 10px;
-
 }
 
-.Labels1{
+.Labels1 {
   display: grid;
-  grid-template-columns: 250px 250px ; 
+  grid-template-columns: 250px 250px;
   justify-content: center;
   grid-column-gap: 10px;
-
 }
-.rangeslider{
+.rangeslider {
   display: grid;
   grid-template-columns: 280px 310px;
   grid-column-gap: 10px;
   justify-content: center;
- 
 }
-#price-min{
+#price-min {
   width: 210px;
 }
-#price-max{
+#price-max {
   width: 210px;
   margin-left: -60px;
-
 }
-form{
+form {
   display: grid;
   grid-row-gap: 10px;
 }
-#bouton-form{
- width: 130px;
- height: 40px;
- border-radius: 10px;
+#bouton-form {
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
 }
-.images{
+.images {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-
 }
-.images img{
+.images img {
   padding: 20px;
+  border-radius: 30px;
+}
+.Titre-Section {
+  text-align: center;
+  position: relative;
+  color: #012738;
+}
+.Titre-Section::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fbc531;
+  content: "";
+}
 
-}
-.Titre-Section{
-text-align: center;
-position: relative;
-}
-.Titre-Section::after{
-  content: '';
-  height: 1px;
-  background: #fbc531;
-  position: absolute;
-  width: 13%;
-  left: 40%;
-  bottom: -10px;
-}
-.Titre-Section::before{
-  content: '';
-  height: 1px;
-  background: #fbc531;
-  position: absolute;
-  width: 13%;
-  left: 40%;
-top: -10px;
-}
-.numbers{
+.numbers {
   display: flex;
   justify-content: space-around;
   align-items: center;
   background: lightgrey;
+}
 
- 
-}
-#fun{
-}
-#fun h3{
+#fun h3 {
   text-align: center;
 }
-.fas{
+.fas {
   text-align: center;
 }
 .vl {
   border-left: 3px solid #fbc531;
   height: 50px;
 }
-.about{
+.about {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-.about img{
-width: 100%;
+.about img {
+  width: 100%;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 15px;
+  margin: 15px;
 }
-img{
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+.about h2 {
+  font-size: 3rem;
+  font-weight: 700px;
+  line-height: 3.25rem;
+  color: #012738;
 }
-.about p{
+
+.about p {
   font-size: 25px;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  right: 0;
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 10px;
+  height: 350px;
+  width: 500px;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+}
+
+.text {
+  white-space: nowrap;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.section-footer {
+  display: flex;
+  background-color: #051922;
+  color: white;
+  padding: 70px 0;
+  justify-content: space-around;
+}
+.About-Us {
+  width: 25%;
+}
+.get-in-touch {
+  width: 25%;
+}
+.Pages {
+  width: 10%;
+}
+.Newletter {
+  width: 25%;
+}
+
+.section-footer h2 {
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 20px;
+  color: #fff;
+}
+.section-footer h2:after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #fbc531;
+  content: "";
+}
+.section-footer p {
+  color: #fff;
+  opacity: 0.7;
+  line-height: 1.8;
+}
+.Pages a {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.7;
+  margin-bottom: 10px;
+  line-height: 1.8;
+  color: #fff;
+}
+.Newletter input {
+  border: none;
+  background-color: #012738;
+  width: 60%;
+  padding: 15px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #fff;
+}
+.Newletter button {
+  width: 20%;
+  border: none;
+  background-color: #012738;
+  color: #fbc531;
+  padding: 14px 0;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  cursor: pointer;
+}
+.copyright {
+  background-color: #051922;
+  border-top: 1px solid #232a35;
+}
+.copyright p {
+  margin: 0;
+  color: #fff;
+  opacity: 0.7;
+  padding: 16px 0;
+  font-size: 15px;
+  text-align: center;
 }
