@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+English&display=swap");
+Body {
+  margin: 0;
+  padding: 0;
+  font-family: "IM Fell English", serif;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 85%;
+  padding: 35px 0;
+}
+#navbar ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.background2{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(./b2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 40vh;
+}
+
+
+
+/*----------3.Cards----------*/
+.card {
+	position: relative;
+  	margin:2% 5px 2% 5px;
+  	background-color: #fff;
+  	transition: box-shadow .25s;
+  	border-radius: 2px;
+   	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+	padding:0;
+	min-width:700px;
+	max-width:700px;
+}
+.card .card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.card .card-content {
+  padding: 15px 10px 0 0;
+  border-radius: 0 0 2px 2px;
+}
+
+.card .card-content p {
+  margin:0;
+  font-size:1.45rem;
+  color: #555555;
+}
+.card-content h3{
+text-align: center;
+}
+/*----3.a.Horizontal----*/
+.card.horizontal .card-image img {
+	height:200px;
+	width:200px;
+}
+
+.card.horizontal {
+  
+  	display: flex;
+}
+.card.horizontal.small .card-image,
+ .card.horizontal.medium .card-image,
+  .card.horizontal.large .card-image {
+  	height: 100%;
+  	max-height: none;
+  	overflow: visible;
+}
+.card-section{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Form-section{
+    width: 40%;
+}
+
+.filter{
+    padding: 25px;
+}
+.select1{
+    margin: 35px;
+   
+}
+label{
+    font-size: 20px;
+    margin:15px ;
+    color: #012738;
+}
+select{
+    width: 100px;
+    border: 2px solid #012738;
+    background-color: transparent;
+    border-radius: 20px;
+    height: 30px;
+}
+.row{
+    display: flex;
+}
+.Form-section form{
+    border: 2px solid #012738;
+    border-radius: 20px;
+}
+.price{
+    display: flex;
+}
